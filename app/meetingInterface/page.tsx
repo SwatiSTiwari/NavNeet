@@ -12,7 +12,7 @@ const meetingTypes = [
   { value: 'product', label: 'Product Meeting' },
 ];
 
-const questions = {
+const questions: { [key: string]: string[] } = {
   marketing: [
     "What are our key marketing KPIs for this quarter?",
     "How is our latest campaign performing?",
@@ -50,7 +50,7 @@ export default function MeetingInterface() {
         } else {
           clearInterval(interval!);
         }
-      }, 30000); // Show a new question every 30 seconds
+      }, 30000); 
     }
 
     return () => {

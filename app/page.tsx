@@ -24,16 +24,16 @@ export default function Home() {
   
 
   const handleOpenQuestions = () => {
-    window.open('/meetingInterface', ); // Replace '/questions-page' with the path to the page you want to open
+    window.open('/meetingInterface', ); 
   }
   return (
     <div className="max-w-4xl mx-auto p-6 bg-gray-100 mb-8 mt-16">
-      {/* Centering the Open Questions button */}
+      
       <div className="flex justify-center items-center mb-6">
         <Button onClick={handleOpenQuestions}>Open Questions</Button>
       </div>
 
-      {/* Content with space from the top */}
+      
       <div className="space-y-8">
         <div>
           <div className="flex justify-between items-center mb-4">
