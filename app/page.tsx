@@ -53,7 +53,7 @@ export default function Home() {
   {questions.map((question, index) => (
     <Card key={index} className={`${index === 1 ? 'border-orange-500 border-2' : ''} lg:rounded-xl h-32`}>
       <CardContent className="p-4">
-        <p className="text-lg">{question}</p>
+        <p className="text-sm">{question}</p>
       </CardContent>
     </Card>
   ))}

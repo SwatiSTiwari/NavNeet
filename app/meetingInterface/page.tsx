@@ -33,7 +33,7 @@ const questions: { [key: string]: string[] } = {
 export default function MeetingInterface() {
   const [selectedMeetingType, setSelectedMeetingType] = useState<string>('');
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
-  const { toast } = useToast();  // Use toast from useToast
+  const { toast } = useToast();  
 
   useEffect(() => {
     let interval: NodeJS.Timeout | null = null;
@@ -87,7 +87,7 @@ export default function MeetingInterface() {
         <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
           <Image
             src={ImageUrl}  
-            alt="Instagram Image"
+            alt="Meeting Image"
             className="rounded-lg"
             height={720}
             width={1280}
